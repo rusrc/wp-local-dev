@@ -1,0 +1,10 @@
+# src/* - First, ignore everything in the src directory.
+# !src/plugins/ - Then, do not ignore the plugins directory itself (important for Git to traverse into it).
+# !src/plugins/akismet/ - Do not ignore the akismet directory (so Git sees it exists).
+# !src/plugins/akismet/* - Finally, do not ignore all files inside akismet.
+
+
+src/*
+#!src/plugins/
+!src/plugins/you-plugin-name/
+!src/plugins/you-plugin-name/*
